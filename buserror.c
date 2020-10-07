@@ -3,7 +3,7 @@
 
 #include <metal/cpu.h>
 #include <metal/drivers/sifive_buserror0.h>
-#include <metal/machine/platform.h>
+#include <metal/platform.h>
 #include <stdio.h>
 
 /* The sifive,error0 device is used to trigger a TileLink bus error for
