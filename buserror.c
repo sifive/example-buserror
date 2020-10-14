@@ -56,6 +56,9 @@ int main() {
   }
   if (!sifive_buserror_is_event_accrued(cpu, METAL_BUSERROR_EVENT_ANY)) {
     printf("Cleared accrued bus error\n");
+  } else {
+    printf("Failed to clear accrued bus error event\n");
+    return 4;
   }
 
   /* Enable hart-local interrupt for error events */
